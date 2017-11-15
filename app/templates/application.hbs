@@ -3,12 +3,13 @@
 </div>
 <div class="ui attached stackable inverted menu">
  <a class="item">
- <i class="home icon"></i> Home
+ <a class="home icon">{{#link-to 'home'}}Home{{/link-to}} </a>
  </a>
  <a class="right item">{{#link-to 'checkCompliance'}}Check Compliance{{/link-to}} </a>
 
 </div>
 <div class="ui container">
+    
 {{outlet}}
 </div>
 <br>
@@ -17,6 +18,6 @@
  ©  digitalCOI
  </div>
  <div class="two wide column">
- <img class="ui centered aligned tiny image" src="/assets/images/digitalCOIWhite.png">
+ <img class="ui centered aligned tiny image" src="/assets/images/digitalCOIWhite.png" >
  </div>
 </div>
