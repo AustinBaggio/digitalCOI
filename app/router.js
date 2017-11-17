@@ -9,6 +9,10 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('checkCompliance');
   this.route('home');
+  this.route('building');
+  this.route('tenant');
+  this.route('tennantOne');
+  this.route('photoAdd');
 });
 
 export default Router;
