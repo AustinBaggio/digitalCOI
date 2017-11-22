@@ -1,11 +1,71 @@
+<head>
+  
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
-  {{#link-to 'tennantOne'}}
-    <div style="padding:10px;"> </div>
-    <img class="ui centered aligned image" src="/assets/images/tennant1.png" style="width:300px;height:60px;">
-  {{/link-to}}
-<img class="ui centered aligned image" src="/assets/images/tennant2.png" style="width:300px;height:60px">
-<img class="ui centered aligned image" src="/assets/images/tennant3.png" style="width:300px;height:60px">
-<img class="ui centered aligned image" src="/assets/images/tennant4.png" style="width:300px;height:60px">
-<img class="ui centered aligned image" src="/assets/images/tennant5.png" style="width:300px;height:60px">
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
 
-<center><a class="item" style="font-size:30px;padding:30px"></a></center>
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div style="padding:10px;"> </div>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Compliant</th>
+  </tr>
+
+
+  <tr>
+
+    <td>Alfreds Furniture</td>
+    <td>Maria Anders</td>
+          {{#link-to 'tennantOne'}}
+
+    <td>NO</td>
+        {{/link-to}}
+
+  </tr>
+
+  <tr>
+    <td>Centro Cupcakes</td>
+    <td>Francisco Chang</td>
+
+    <td>{{#link-to 'tenant'}} YES {{/link-to}} </td>
+  </tr>
+  <tr>
+    <td>Foot Wear</td>
+    <td>Roland Mendel</td>
+    <td>{{#link-to 'tenant'}} NO {{/link-to}} </td>
+  </tr>
+  <tr>
+    <td>Island Bikinis</td>
+    <td>Helen Bennett</td>
+    <td>{{#link-to 'tenant'}} YES {{/link-to}} </td>
+  </tr>
+  <tr>
+    <td>Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>{{#link-to 'tenant'}} YES {{/link-to}} </td>
+  </tr>
+  <tr>
+    <td>Happy Days</td>
+    <td>Giovanni Rovelli</td>
+    <td>{{#link-to 'tenant'}} YES {{/link-to}} </td>
+  </tr>
+</table>
+
+</body>

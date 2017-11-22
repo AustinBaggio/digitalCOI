@@ -1,6 +1,52 @@
 <div style="padding:10px;"> </div>
-<img class="ui centered aligned image" src="/assets/images/tennant1.png" style="width:300px;height:60px;">
-<div>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+  <div></div>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Compliant</th>
+  </tr>
+
+
+  <tr>
+
+    <td>Alfreds Furniture</td>
+    <td>Maria Anders</td>
+          
+
+    <td>{{#link-to 'tennantOne'}}NO{{/link-to}}</td>
+        
+
+  </tr>
+
+</table>
+
+</body>
+
+<div style="padding:10px;"> </div>
+
+
   <center><a class="item" style="font-size:26px;padding:30px">
     {{#link-to 'photoAdd'}}Add Lease{{/link-to}}
   </a>
@@ -9,9 +55,9 @@
   <div style="font-size:26px;padding:30px">
     COI
       <img class="ui centered aligned image" src="/assets/images/COI.png" style="width:400px;height:1000px;">
+<div style="padding:10px;"> </div>
 
     Request New COI
   </div>
 </center>
 
-</div>
